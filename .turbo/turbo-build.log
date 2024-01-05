@@ -1,0 +1,80 @@
+
+> nextjs@0.1.0 build /home/runner/work/fuels-ts/fuels-ts/templates/nextjs
+> pnpm run xprebuild && next build
+
+
+> nextjs@0.1.0 xprebuild /home/runner/work/fuels-ts/fuels-ts/templates/nextjs
+> fuels build --deploy
+
+Building..
+Building Sway programs using built-in 'forc' binary
+Generating types..
+Starting built-in 'fuel-core' node..
+[2m2023-12-19T16:40:56.094696Z[0m [32m INFO[0m [2mfuel_core::cli::run::relayer[0m[2m:[0m [2m63:[0m Relayer service disabled
+[2m2023-12-19T16:40:56.094722Z[0m [32m INFO[0m [2mfuel_core::cli::run::p2p[0m[2m:[0m [2m237:[0m P2P service disabled
+[2m2023-12-19T16:40:56.094729Z[0m [32m INFO[0m [2mfuel_core::cli::run[0m[2m:[0m [2m264:[0m Block production mode: Instant
+[2m2023-12-19T16:40:56.094734Z[0m [33m WARN[0m [2mfuel_core::cli::run[0m[2m:[0m [2m380:[0m Consensus key configured insecurely using cli args. Consider setting the CONSENSUS_KEY_SECRET env var instead.
+[2m2023-12-19T16:40:56.094739Z[0m [33m WARN[0m [2mfuel_core::cli::run[0m[2m:[0m [2m294:[0m The coinbase recipient `ContractId` is not set!
+[2m2023-12-19T16:40:56.094745Z[0m [32m INFO[0m [2mfuel_core::cli::run[0m[2m:[0m [2m358:[0m Fuel Core version v0.22.0
+[2m2023-12-19T16:40:56.094751Z[0m [32m INFO[0m [2mfuel_core::service[0m[2m:[0m [2m95:[0m Opening database "/home/runner/work/fuels-ts/fuels-ts/templates/nextjs/.fuels" with cache size "1073741824"
+[2m2023-12-19T16:40:56.219296Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m [2mfuel_core::service[0m[2m:[0m [2m189:[0m Initializing database
+[2m2023-12-19T16:40:56.220040Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1m_commit_result[0m[1m{[0m[3mblock_id[0m[2m=[0mb1807ca9f2eec7e459b866ecf69b68679fc6b205a9a85c16bd4943d1bfc6fb2a [3mheight[0m[2m=[0m0 [3mtx_status[0m[2m=[0m[][1m}[0m[2m:[0m [2mfuel_core_importer::importer[0m[2m:[0m [2m264:[0m Committed block 0xb1807ca9f2eec7e459b866ecf69b68679fc6b205a9a85c16bd4943d1bfc6fb2a
+[2m2023-12-19T16:40:56.220064Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m [2mfuel_core::service[0m[2m:[0m [2m194:[0m Initializing sub services
+[2m2023-12-19T16:40:56.221358Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m [2mfuel_core::graphql_api::service[0m[2m:[0m [2m216:[0m Binding GraphQL provider to 0.0.0.0:4000
+[2m2023-12-19T16:40:56.221479Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"SyncTask"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m298:[0m The service SyncTask is shut down
+[2m2023-12-19T16:40:56.221519Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"ImportTask"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m298:[0m The service ImportTask is shut down
+[2m2023-12-19T16:40:56.221590Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"FuelService"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m330:[0m Starting FuelService service
+[2m2023-12-19T16:40:56.221613Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"GraphQL"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m330:[0m Starting GraphQL service
+[2m2023-12-19T16:40:56.221640Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"TxPool"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m330:[0m Starting TxPool service
+[2m2023-12-19T16:40:56.221663Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"PoA"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m330:[0m Starting PoA service
+[2m2023-12-19T16:40:56.221676Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"PoASyncTask"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m330:[0m Starting PoASyncTask service
+Deploying contracts to: http://127.0.0.1:4000/graphql
+[2m2023-12-19T16:40:56.353469Z[0m [32m INFO[0m [1mrequest[0m[2m:[0m[1mexecute[0m[2m:[0m[1mfield[0m[1m{[0m[3mpath[0m[2m=[0msubmit [3mparent_type[0m[2m=[0mMutation [3mreturn_type[0m[2m=[0mTransaction![1m}[0m[2m:[0m[1minsert_submitted_txn[0m[2m:[0m[1minsert[0m[2m:[0m[1minsert_inner[0m[1m{[0m[3mtx_id[0m[2m=[0mf56a0ed9c147a5c36073a2cd4bf6de0af1e77965277ef9711674cc589fe08e6f[1m}[0m[2m:[0m [2mfuel_core_txpool::txpool[0m[2m:[0m [2m88:[0m [3mreturn[0m[2m=[0mInsertionResult { inserted: Create(Checked { transaction: Create { bytecode_length: 493, bytecode_witness_index: 0, policies: Policies { bits: PoliciesBits(GasPrice | MaxFee), values: [0, 0, 0, 10000000] }, storage_slots: [StorageSlot { key: f383b0ce51358be57daa3b725fe44acdb2d880604e367199080b4379c41bb6ed, value: 0000000000000000000000000000000000000000000000000000000000000000 }], inputs: [CoinSigned(Coin { utxo_id: UtxoId { tx_id: 0000000000000000000000000000000000000000000000000000000000000000, output_index: 1 }, owner: 94ffcc53b892684acefaebc8a3d4a595e528a8cf664eeb3ef36f1020b0809d0d, amount: 18446744073709551615, asset_id: 0000000000000000000000000000000000000000000000000000000000000000, tx_pointer: TxPointer { block_height: 00000000, tx_index: 0 }, witness_index: 1, maturity: 00000000, predicate_gas_used: Empty, predicate: Empty, predicate_data: Empty })], outputs: [ContractCreated { contract_id: 86e3f127ccb443f999fc41fa8c75d4d474b4f6f2a77afd33020a8ddbeedd6c46, state_root: 0a42e52631b6210a905f13eda25a56f61b8cc0bc38ef3c657c48a27f878df03e }, Change { to: 94ffcc53b892684acefaebc8a3d4a595e528a8cf664eeb3ef36f1020b0809d0d, amount: 0, asset_id: 0000000000000000000000000000000000000000000000000000000000000000 }], witnesses: [Witness { data: 74000003470000000000000000... }, Witness { data: c2001a7408cc0d908a51a9d6ee... }], salt: e8ccb3356fa0b9180b4c835163bcc7f3ec621b25491c7324134e694719ae2d2c, metadata: Some(CreateMetadata { contract_id: 86e3f127ccb443f999fc41fa8c75d4d474b4f6f2a77afd33020a8ddbeedd6c46, contract_root: 91d3d0f83065861a25d994662984a99b2be5930657aaa3f6e05737fb17ee5c54, state_root: 0a42e52631b6210a905f13eda25a56f61b8cc0bc38ef3c657c48a27f878df03e, id: f56a0ed9c147a5c36073a2cd4bf6de0af1e77965277ef9711674cc589fe08e6f, inputs_offset: 176, inputs_offset_at: [176], inputs_predicate_offset_at: [None], outputs_offset: 352, outputs_offset_at: [352, 424], witnesses_offset: 504, witnesses_offset_at: [504, 2488] }) }, metadata: CheckedMetadata { free_balances: NonRetryableFreeBalances({0000000000000000000000000000000000000000000000000000000000000000: 18446744073709551615}), block_height: 00000000, fee: TransactionFee { min_fee: 0, max_fee: 0, min_gas: 17715, max_gas: 17715 } }, checks_bitmask: Checks(Basic | Signatures | Predicates) }), submitted_time: 1703004056.353466019s, removed: [] }
+[2m2023-12-19T16:40:56.353532Z[0m [32m INFO[0m [1mrequest[0m[2m:[0m[1mexecute[0m[2m:[0m[1mfield[0m[1m{[0m[3mpath[0m[2m=[0msubmit [3mparent_type[0m[2m=[0mMutation [3mreturn_type[0m[2m=[0mTransaction![1m}[0m[2m:[0m[1minsert_submitted_txn[0m[2m:[0m[1minsert[0m[2m:[0m [2mfuel_core_txpool::service[0m[2m:[0m [2m103:[0m Transaction f56a0ed9c147a5c36073a2cd4bf6de0af1e77965277ef9711674cc589fe08e6f successfully submitted to the tx pool
+[2m2023-12-19T16:40:56.354630Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"PoA"[1m}[0m[2m:[0m[1m_commit_result[0m[1m{[0m[3mblock_id[0m[2m=[0m67f0f86d195eeab334dfe12dad339070856783f82a634ec2c41a8094938ceaa7 [3mheight[0m[2m=[0m1 [3mtx_status[0m[2m=[0m[TransactionExecutionStatus { id: f56a0ed9c147a5c36073a2cd4bf6de0af1e77965277ef9711674cc589fe08e6f, result: Success { result: Some(Return(1)) } }, TransactionExecutionStatus { id: 8cf76342f6c4b2d74b3a18cd3af648374ea1306370b5928da5403ce104616a9e, result: Success { result: None } }][1m}[0m[2m:[0m [2mfuel_core_importer::importer[0m[2m:[0m [2m264:[0m Committed block 0x67f0f86d195eeab334dfe12dad339070856783f82a634ec2c41a8094938ceaa7
+[2m2023-12-19T16:40:56.354667Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"TxPool"[1m}[0m[2m:[0m [2mfuel_core_txpool::service[0m[2m:[0m [2m98:[0m Transaction f56a0ed9c147a5c36073a2cd4bf6de0af1e77965277ef9711674cc589fe08e6f successfully included in block 00000001
+[2m2023-12-19T16:40:56.354678Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"TxPool"[1m}[0m[2m:[0m [2mfuel_core_txpool::service[0m[2m:[0m [2m98:[0m Transaction 8cf76342f6c4b2d74b3a18cd3af648374ea1306370b5928da5403ce104616a9e successfully included in block 00000001
+Contract IDs saved at: /home/runner/work/fuels-ts/fuels-ts/templates/nextjs/src/sway-api/contract-ids.json
+🎉  Build completed successfully!
+[2m2023-12-19T16:40:56.407409Z[0m [32m INFO[0m [2mfuel_core::cli::run[0m[2m:[0m [2m431:[0m sigterm received
+[2m2023-12-19T16:40:56.407457Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"FuelService"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m387:[0m Shutting down FuelService service
+[2m2023-12-19T16:40:56.407593Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"GraphQL"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m387:[0m Shutting down GraphQL service
+[2m2023-12-19T16:40:56.407605Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"GraphQL"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m298:[0m The service GraphQL is shut down
+[2m2023-12-19T16:40:56.407623Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"TxPool"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m387:[0m Shutting down TxPool service
+[2m2023-12-19T16:40:56.407644Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"TxPool"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m298:[0m The service TxPool is shut down
+[2m2023-12-19T16:40:56.407658Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"PoA"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m387:[0m Shutting down PoA service
+[2m2023-12-19T16:40:56.407665Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"PoA"[1m}[0m[2m:[0m [2mfuel_core_poa::service[0m[2m:[0m [2m492:[0m PoA MainTask shutting down
+[2m2023-12-19T16:40:56.407679Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"PoASyncTask"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m387:[0m Shutting down PoASyncTask service
+[2m2023-12-19T16:40:56.407687Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"PoASyncTask"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m298:[0m The service PoASyncTask is shut down
+[2m2023-12-19T16:40:56.407701Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"PoA"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m298:[0m The service PoA is shut down
+[2m2023-12-19T16:40:56.408935Z[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"FuelService"[1m}[0m[2m:[0m [2mfuel_core_services::service[0m[2m:[0m [2m298:[0m The service FuelService is shut down
+⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+   Linting and checking validity of types ...
+   ▲ Next.js 14.0.1
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Collecting page data ...
+   Generating static pages (0/3) ...
+ ✓ Generating static pages (3/3) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (pages)                              Size     First Load JS
+┌ ○ / (718 ms)                             190 kB          456 kB
+├   /_app                                  0 B             266 kB
+└ ○ /404                                   181 B           266 kB
++ First Load JS shared by all              267 kB
+  ├ chunks/framework-75c3953d15cbc51a.js   45.5 kB
+  ├ chunks/main-0cb1d394a17b79fb.js        33 kB
+  ├ chunks/pages/_app-34a3bbf85b346776.js  186 kB
+  ├ chunks/webpack-a06fe140fe7e8fac.js     1.07 kB
+  └ css/091b409aabebe91a.css               1.44 kB
+
+○  (Static)  prerendered as static HTML
+
