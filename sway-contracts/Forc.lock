@@ -1,13 +1,21 @@
 [[package]]
 name = "core"
-source = "path+from-root-B77DA2F383183718"
+source = "path+from-root-BD9159206068AEC6"
+
+[[package]]
+name = "src20"
+source = "git+https://github.com/FuelLabs/sway-standards?tag=v0.3.0#718d51fdfdbdf4d399c8f281e31462a9f35f0304"
+dependencies = ["std"]
 
 [[package]]
 name = "std"
-source = "git+https://github.com/fuellabs/sway?tag=v0.48.1#6886ef050ce62afd3fe3186ed562fd33bd76bffa"
+source = "git+https://github.com/fuellabs/sway?tag=v0.46.1#512a3386f8961185188302f391ccc96553d23a7a"
 dependencies = ["core"]
 
 [[package]]
 name = "test-contract"
 source = "member"
-dependencies = ["std"]
+dependencies = [
+    "src20",
+    "std",
+]
