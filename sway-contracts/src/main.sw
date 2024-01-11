@@ -65,11 +65,7 @@ impl SRC20 for Contract {
     /// ```
     #[storage(read)]
     fn total_supply(asset: AssetId) -> Option<u64> {
-        if asset == AssetId::default() {
-            Some(TOTAL_SUPPLY)
-        } else {
-            None
-        }
+       Some(TOTAL_SUPPLY)
     }
 
     /// Returns the name of the asset.
@@ -96,11 +92,7 @@ impl SRC20 for Contract {
     /// ```
     #[storage(read)]
     fn name(asset: AssetId) -> Option<String> {
-        if asset == AssetId::default() {
-            Some(String::from_ascii_str(from_str_array(NAME)))
-        } else {
-            None
-        }
+        Some(String::from_ascii_str(from_str_array(NAME)))
     }
 
     /// Returns the symbol of the asset.
@@ -127,11 +119,9 @@ impl SRC20 for Contract {
     /// ```
     #[storage(read)]
     fn symbol(asset: AssetId) -> Option<String> {
-        if asset == AssetId::default() {
+       
             Some(String::from_ascii_str(from_str_array(SYMBOL)))
-        } else {
-            None
-        }
+      
     }
 
     /// Returns the number of decimals the asset uses.
@@ -158,10 +148,6 @@ impl SRC20 for Contract {
     /// ```
     #[storage(read)]
     fn decimals(asset: AssetId) -> Option<u8> {
-        if asset == AssetId::default() {
-            Some(DECIMALS)
-        } else {
-            None
-        }
+        Some(DECIMALS)
     }
 }
